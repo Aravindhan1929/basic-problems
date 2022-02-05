@@ -1,16 +1,17 @@
 package basicprogramming;
 import java.util.Scanner;
-public class factorial {
+public class NumberOfDigit {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input=new Scanner(System.in);
 		int number=input.nextInt();
-		int factorial=1;
-		for(int i=1;i<=number;i++) {
-			factorial=factorial*i;
+		int temp=0;
+		while(number>0) {
+			number=number/10;
+			temp++;
 		}
-		System.out.println(factorial);
+		System.out.println(temp);
 	}
 
 }
