@@ -1,9 +1,8 @@
 package basicprogramming;
 import java.util.Scanner;
-public class Armstrongnumber {
+public class ArmstrongUser_Defined {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner input=new Scanner(System.in);
 		int num=input.nextInt();  
 		if(isArmstrong(num))  
@@ -35,4 +34,5 @@ public class Armstrongnumber {
 	return true;      
 	else return false;   
 	} 
+
 }
