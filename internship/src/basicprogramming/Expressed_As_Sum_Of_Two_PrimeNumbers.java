@@ -1,7 +1,6 @@
 package basicprogramming;
 import java.util.Scanner;
 public class Expressed_As_Sum_Of_Two_PrimeNumbers {
-
 	public static void main(String[] args) {
 		Scanner input=new Scanner(System.in);
 		int number = input.nextInt();

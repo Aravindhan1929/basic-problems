@@ -9,7 +9,6 @@ public class PrimeWithinIntervals {
         a = input.nextInt();
         System.out.printf("\nEnter upper bound of the interval: ");
         b = input.nextInt();
-        System.out.printf("\nPrime numbers between %d and %d are: ", a, b);
         for (i = a; i <= b; i++) {
             if (i == 1 || i == 0)
                 continue;
