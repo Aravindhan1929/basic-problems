@@ -1,7 +1,6 @@
 package Practice_Problems;
 import java.util.Scanner;
-public class CharacterCount {
-
+public class VowelsCount {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
         System.out.println("Enter the String: ");
@@ -18,7 +17,5 @@ public class CharacterCount {
         }
         ans += userInput.charAt(userInput.length()-1) + "" + count;
         System.out.println("the ans: " + ans);
-
 	}
-
 }

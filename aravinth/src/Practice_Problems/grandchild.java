@@ -17,6 +17,13 @@ public class grandchild {
         String grandpa = input.next();
         System.out.println("The no of grandchildren for " + grandpa + " is: " + findGrandSon(array, grandpa));
 	}
+	static int findGrandSonCount(String[][] array, String son) {
+        int count = 0;
+        for(int i = 0; i< array.length; i++) {
+            if(array[i][1].equals(son)) count++;
+        }
+        return count;
+    }
 	static int findGrandSon(String[][] array, String granddad) {
         ArrayList<String> sonList = new ArrayList<String>();
         for(int i = 0; i < array.length; i++) {
@@ -28,11 +35,5 @@ public class grandchild {
         }
         return count;
     }
-	static int findGrandSonCount(String[][] array, String son) {
-        int count = 0;
-        for(int i = 0; i< array.length; i++) {
-            if(array[i][1].equals(son)) count++;
-        }
-        return count;
-    }
+
 }

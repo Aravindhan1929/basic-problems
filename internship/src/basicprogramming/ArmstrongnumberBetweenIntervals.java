@@ -27,7 +27,7 @@ public class ArmstrongnumberBetweenIntervals {
 	while(temp>0)   
 	{     
 	last = temp % 10;    
-	sum +=  (Math.pow(last, digits));
+	sum +=  last*last*last;
 	temp = temp/10;   
 	}  
 	if(n==sum)   
